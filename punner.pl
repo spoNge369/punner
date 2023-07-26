@@ -175,6 +175,7 @@ async sub get_runner($payload) {
     #say $tx->res->headers->content_length;
 
     #say dumper $body;
+    # adding $tx->req->method . $url
     say $url . " status_code: ". $status_code . " response_size: " . $size_bs;
 
 }
