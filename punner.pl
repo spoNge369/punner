@@ -116,7 +116,7 @@ sub jsonToHeader($header_json) {
 
 sub postmanReplace(@data) {
     foreach my $fr (@find_replace) {
-        my @arrayR = split ',', $fr;
+        my @arrayR = split ',', $fr; #split /,\s*/, $fr;
         my $find = $arrayR[0];
         my $replace = $arrayR[1];
 
