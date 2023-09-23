@@ -173,12 +173,12 @@ async sub get_runner($payload) {
         $url = BLACK . $url . RESET;
     }
     #say $tx->res->headers->content_length;
+    my $method = $tx->req->method ;
 
     #say dumper $body;
     # adding $tx->req->method . $url
-    say $url . " status_code: ". $status_code . " response_size: " . $size_bs;
-
-}
+    say "$method " . $url . " status_code: ". $status_code . " response_size: " . $size_bs;
+} 
 
 
 sub testhttp(@data) { #@data @payloads main...
