@@ -173,7 +173,7 @@ async sub get_runner($payload) {
         $url = BLACK . $url . RESET;
     }
     #say $tx->res->headers->content_length;
-    my $met = $tx->req->method ;
+    my $met = $tx->req->method;
 
     #say dumper $body;
     # adding $tx->req->method . $url
